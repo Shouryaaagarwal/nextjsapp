@@ -73,8 +73,9 @@ export default function Login() {
       >
         {" "}
         Login here{" "}
-      </button>
-      <Link href="/signup">Visit to SignUp page </Link>
+      </button>   
+      <Link href="/signup">Visit to SignUp page </Link>  
+       <Link href="/forgot" className="mt-10 bg-green-400 text-black px-2 py-3"> fORGOT PASSWORD</Link>
     </div>
   );
 }
