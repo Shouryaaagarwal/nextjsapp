@@ -3,7 +3,7 @@ import type { NextRequest } from 'next/server'
  
 export function middleware(request: NextRequest) {
         const path = request.nextUrl.pathname 
-        const isPublicpath = path==='/login' || path=== '/signup'  || path==="/verifyemail"
+        const isPublicpath = path==='/login' || path=== '/signup'  || path==="/verifyemail" || path==='/resetpassword'
          
       const token =    request.cookies.get('token')?.value|| ''; 
          
@@ -24,6 +24,7 @@ export const config = {
     '/profile',
     '/login',
     '/signup', 
-    '/verifyemail'
+    '/verifyemail' , 
+    '/resetpassword'
   ],
 }
